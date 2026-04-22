@@ -100,7 +100,6 @@ func maxDigits(n int64) int {
 }
 
 func main() {
-	fmt.Println("Hi this is first line of code")
 	linesFlag := flag.Bool("l", false, "print newline counts")
 	wordsFlag := flag.Bool("w", false, "print the word counts")
 	charsFlag := flag.Bool("m", false, "print the character counts")
@@ -246,7 +245,7 @@ func main() {
 
 		if *linesFlag {
 			fmt.Printf("Lines : %s%*d ", sep, lineW, c.Lines)
-			sep = " "
+			sep = ""
 		}
 		if *wordsFlag {
 			fmt.Printf("Words : %s%*d ", sep, wordW, c.Words)
